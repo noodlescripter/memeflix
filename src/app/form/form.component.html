@@ -1,0 +1,48 @@
+<div class="box has-shadow has-background-black-bis mt-10">
+  <div class="file has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" (change)="getFileUpload($event)">
+      <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-upload"></i>
+      </span>
+      <span class="file-label">
+        Choose a file…
+      </span>
+    </span>
+      <span class="file-name">
+      {{imageUrl}}
+    </span>
+    </label>
+  </div>
+
+  <div class="field mt-3">
+    <input class="input is-success" type="text" id="topText" placeholder="Top Text" (input)="getTopText()">
+  </div>
+
+  <div class="field">
+    <input class="input is-success" type="text" id="bottomText" placeholder="Bottom Text" (input)="getBottomText()">
+  </div>
+
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-link" (click)="createMeme()">Create Meme</button>
+    </div>
+  </div>
+</div>
+
+<div class="box has-shadow has-background-warning">
+    <div class="card is-mobile has-shadow has-background-black mt-1 has-text-white">
+      <div class="card-image">
+        <figure class="image is-1by1">
+          <img src="{{imageUrl}}">
+          <h3 class="title is-2 first-txt has-text-white has-text-weight-bold has-text-centered">{{newTopText}}</h3>
+          <h3 class="title is-2 second-txt has-text-white has-text-weight-bold has-text-centered">{{newBottomText}}</h3>
+        </figure>
+      </div>
+      <div class="card-content">
+        <p class="title is-4">@noodlescripter</p>
+      </div>
+    </div>
+  </div>
+

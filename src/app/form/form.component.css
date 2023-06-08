@@ -1,0 +1,14 @@
+.mt-10{
+  margin-top: 70px;
+}
+.first-txt {
+  position: absolute;
+  top: 17px;
+  left: 100px;
+}
+
+.second-txt {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+}

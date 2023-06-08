@@ -1,0 +1,40 @@
+<nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <h1 class="title is-3 has-text-danger-dark has-text-weight-bold">MEMEflix</h1>
+    </a>
+
+    <a
+      (click)="controlMenu()"
+      role="button" class="navbar-burger {{isBurgerMenuActive}}" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu {{isBurgerMenuActive}} has-background-black-bis">
+    <div class="navbar-start">
+      <a class="navbar-item has-text-white">
+        <strong>Nothing Here Yet</strong>
+      </a>
+
+      <a class="navbar-item has-text-white">
+        <strong>Nothing Here Yet</strong>
+      </a>
+
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-danger">
+            <strong>Sign up N/A</strong>
+          </a>
+          <a class="button is-light">
+            Log in N/A
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
